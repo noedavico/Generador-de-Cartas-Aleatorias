@@ -4,3 +4,23 @@ body {
   background: green;
   box-sizing: border-box;
 }
+
+.card {
+  height: 600px;
+  width: 450px;
+  border-radius: 1em;
+  padding: 5px;
+  margin: auto;
+}
+
+.top {
+  font-size: 100px;
+}
+
+.number {
+  font-size: 200px;
+}
+
+.bottom {
+  font-size: 100px;
+}

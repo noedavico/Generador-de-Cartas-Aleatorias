@@ -6,7 +6,21 @@ import "./style.css";
 
 window.onload = function() {
   let palo = ["♦", "♥", "♠", "♣"];
-  let number = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+  let number = [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K",
+    "A"
+  ];
   //Declaracion de arrays
   let rand_palo = Math.floor(Math.random() * palo.length);
   let rand_number = Math.floor(Math.random() * number.length);
