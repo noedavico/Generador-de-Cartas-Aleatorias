@@ -23,4 +23,5 @@ body {
 
 .bottom {
   font-size: 100px;
+  transform: rotate(180deg);
 }

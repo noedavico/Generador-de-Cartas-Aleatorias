@@ -8,19 +8,33 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link rel="shortcut icon" href="./4geeks.ico" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+      setTimeout("location.reload(true);", 10000);
+      </script>
+  <!-- refrescar la pagina a los 10segundos -->
   </head>
   <body>
     <div class="container position-absolute m-2 ">
-      <div class="card">
+      <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid justify-content-start">
+        <button onClick="window.location.reload();"
+          type="button" class="btn btn-outline-warning me-2"> Change Card </button>
+          <!-- boton cambio de carta -->
+        <button onClick="refresh();" class="btn btn-outline-warning">
+          Refresh
+        </button>
+        <!-- boton refrescar la pagina -->
+      </div>
+        
+      <div class="card mt-2">
         <div class="top text-star"></div>
         <div class="number text-center"></div>
-        <div class="bottom text-end"></div>
+        <div class="bottom text-sar"></div>
       </div>
-    </div>
+     
     <script src="./src/app.js"></script>
   </body>
 </html>

@@ -22,15 +22,22 @@ window.onload = function() {
     "A"
   ];
   //Declaracion de arrays
-  let rand_palo = Math.floor(Math.random() * palo.length);
-  let rand_number = Math.floor(Math.random() * number.length);
+  let randPalo = Math.floor(Math.random() * palo.length);
+  let randNumber = Math.floor(Math.random() * number.length);
   //radom
   let upper = document.querySelector(".top");
   let numbers = document.querySelector(".number");
   let lower = document.querySelector(".bottom");
   //obtencion de elementos
-  numbers.innerHTML = number[rand_number];
-  upper.innerHTML = palo[rand_palo];
-  lower.innerHTML = palo[rand_palo];
+
+  numbers.innerHTML = number[randNumber];
+
+  upper.innerHTML = palo[randPalo];
+  upper.style.color =
+    palo[randPalo] === "♥" || palo[randPalo] === "♦" ? "red" : "black";
+
+  lower.innerHTML = palo[randPalo];
+  lower.style.color =
+    palo[randPalo] === "♥" || palo[randPalo] === "♦" ? "red" : "black";
   //manipulacion de elementos
 };
